@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context="com.mini_app.erick.tlahuac.mini_application.Formulario"
+    android:weightSum="1">
+
+    <!--Actividad -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <!--Linear: Nombre -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp">
+
+        <TextView
+            android:id="@+id/txtnombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE: "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.311"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.334" />
+
+        <EditText
+            android:id="@+id/etnombre"
+            android:layout_width="242dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+    <!-- Linear: Direccion-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtdireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIRECCION: "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.311"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.334" />
+
+        <EditText
+            android:id="@+id/etdireccion"
+            android:layout_width="242dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+
+    </LinearLayout>
+    <!-- Linear: Telefono -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txttel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TELEFONO: "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.311"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.334" />
+
+        <EditText
+            android:id="@+id/ettel"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+    </LinearLayout>
+
+
+        <!--Boton: Calendario-->
+        <Button
+            android:id="@+id/btnfecha"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="110dp"
+            android:text="Calendario"
+            android:layout_height="60dp" />
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="10dp">
+
+        <!--Fecha-->
+        <EditText
+            android:id="@+id/etfecha"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnenviar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Enviar" />
+
+</LinearLayout>
